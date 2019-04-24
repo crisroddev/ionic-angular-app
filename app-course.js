@@ -32,7 +32,7 @@ addBtn.addEventListener('click', () => {
         return;
     }
      const newItem = document.createElement('ion-item');
-     newItem.textContent = enteredName + ' - ' + enteredRating + '/5';
+     newItem.innerHTML = `<strong>${enteredName}:</strong>&nbsp ${enteredRating}/5`
      courseList.appendChild(newItem);
 
     clear();
